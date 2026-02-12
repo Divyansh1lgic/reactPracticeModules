@@ -7,12 +7,54 @@
 </head>
 <body>
     <script>
-        let month, day, sign;
+        let month, day, zodiac;
 
-        month = prompt("Enter the month")
+        month = prompt("Enter the month number")
         day = prompt("Enter the day")
+      
+    if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) {
+        zodiac = "aries";
+    } 
+    else if ((month == 4 && day >= 20) || (month == 5 && day <= 20)) {
+        zodiac = "taurus";
+    } 
+    else if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) {
+        zodiac = "gemini";
+    } 
+    else if ((month == 6 && day >= 21) || (month == 7 && day <= 22)) {
+        zodiac = "cancer";
+    } 
+    else if ((month == 7 && day >= 23) || (month == 8 && day <= 22)) {
+        zodiac = "leo";
+    } 
+    else if ((month == 8 && day >= 23) || (month == 9 && day <= 22)) {
+        zodiac = "virgo";
+    } 
+    else if ((month == 9 && day >= 23) || (month == 10 && day <= 22)) {
+        zodiac = "libra";
+    } 
+    else if ((month == 10 && day >= 23) || (month == 11 && day <= 21)) {
+        zodiac = "scorpio";
+    } 
+    else if ((month == 11 && day >= 22) || (month == 12 && day <= 21)) {
+        zodiac = "sagittarius";
+    } 
+    else if ((month == 12 && day >= 22) || (month == 1 && day <= 19)) {
+        zodiac = "capricorn";
+    } 
+    else if ((month == 1 && day >= 20) || (month == 2 && day <= 18)) {
+        zodiac = "aquarius";
+    } 
+    else if ((month == 2 && day >= 19) || (month == 3 && day <= 20)) {
+        zodiac = "pisces";
+    } 
+    else {
+        alert("Invalid Date");
+        return;
+    }
 
-        sign = ((month === "March" || month === "April" ) ? "Aries" : (month === "May"|| month ==="June") ? "Taurus" :(month === "July" || month === "August" ) ? "Geminie" :(month === "September" || month === "October" ) ? "Cancer" :(month === "March" || month === "April" ) ? "Aries" :(month === "March" || month === "April" ) ? "Aries" :(month === "March" || month === "April" ) ? "Aries" :(month === "March" || month === "April" ) ? "Aries" :)
+
+
     </script>
 </body>
 </html>
