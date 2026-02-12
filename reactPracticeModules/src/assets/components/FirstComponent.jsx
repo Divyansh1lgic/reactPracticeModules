@@ -13,6 +13,7 @@ const FirstComponent = () => {
                 <li>MyList</li>
             </ul>
         </div>
+       {/* paragraph section */}
         <p>This is paragraph section</p>
 
         <ul>
